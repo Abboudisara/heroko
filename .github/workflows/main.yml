@@ -17,6 +17,6 @@ jobs:
         APP_NAME: ${{ 'app-heroko-sara' }}
       run: |
         cd ./
-        docker login --username=abboudisara4@gmail.com--password=$HEROKU_API_KEY registry.heroku.com
+        docker login --username=abboudisara4@gmail.com --password=$HEROKU_API_KEY registry.heroku.com
         heroku container:push web -a $APP_NAME
         heroku container:release web -a $APP_NAME
